@@ -1,0 +1,43 @@
+<h3 class="center">20.12.2019</h3>
+
+
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Nominal</th>
+            <th>Value</th>
+            <th>CharCode</th>
+        </tr>
+    </thead>
+    {{#if currencies.lenght}}
+    <tbody>
+        {{#each currencies}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.nominal}}</td>
+            <td>{{this.value}}</td>
+            <td>{{this.charCode}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+    {{else}}
+    <p>No currencies!</p>
+</table>
+{{/if}}
+
+
+
+
+{{!-- <tr>
+    <td>Австралийский доллар</td>
+    <td>1</td>
+    <td>43,0132</td>
+    <td>AUD</td>
+</tr>
+<tr>
+    <td>Австралийский доллар</td>
+    <td>1</td>
+    <td>43,0132</td>
+    <td>AUD</td>
+</tr> --}}
